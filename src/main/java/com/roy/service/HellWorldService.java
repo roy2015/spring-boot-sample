@@ -1,0 +1,19 @@
+package com.roy.service;
+
+import org.springframework.stereotype.Component;
+
+/**
+ * Created with IntelliJ IDEA.
+ * User: BG244210
+ * Date: 06/11/2017
+ * Time: 17:15
+ * To change this template use File | Settings | File Templates.
+ * Description:
+ */
+
+@Component
+public class HellWorldService {
+    public String sayHello() {
+        return "{\"sessionId\":\"123bacd1\", \"hubId\":1, \"userName\":\"abc\"}";
+    }
+}
