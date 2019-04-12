@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: spring-boot-sample
+guo1:
+  name1: 123
