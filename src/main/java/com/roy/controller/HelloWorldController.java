@@ -1,5 +1,6 @@
 package com.roy.controller;
 
+import com.gdy.roy.spring.boot.bean.Student;
 import com.roy.service.HellWorldService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,6 +19,9 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloWorldController {
     @Autowired
     private HellWorldService hellWorldService;
+
+    @Autowired(required = false)
+    private Student student;
 
 
     @RequestMapping(value = "getSysinfo")

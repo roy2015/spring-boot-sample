@@ -1,5 +1,9 @@
 spring:
   application:
     name: spring-boot-sample
+  gdy:
+    roy:
+      name: guoj
+      age : 66
 guo1:
   name1: 123
