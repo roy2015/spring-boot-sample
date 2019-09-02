@@ -7,7 +7,6 @@ import org.springframework.stereotype.Component;
  * User: BG244210
  * Date: 06/11/2017
  * Time: 17:15
- * To change this template use File | Settings | File Templates.
  * Description:
  */
 
