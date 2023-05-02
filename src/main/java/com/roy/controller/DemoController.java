@@ -1,11 +1,9 @@
 package com.roy.controller;
 
-import com.gdy.roy.spring.boot.bean.Student;
 import com.roy.helper.RedisUtil;
-import com.roy.service.HellWorldService;
+import com.roy.service.SystemConfigService;
 import com.roy.vo.PersonVo;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,23 +17,16 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/api")
-public class HelloWorldController {
+public class DemoController {
     @Autowired
-    private HellWorldService hellWorldService;
-
-    @Autowired(required = false)
-    private Student student;
+    private SystemConfigService systemConfigService;
 
     @Autowired
     private RedisUtil redisUtil;
 
-    @Autowired
-    private PersonVo person;
-
-
     @RequestMapping(value = "getSysinfo")
     String getSysInfo() {
-        redisUtil.incr("idGenerater", 10);
-        return hellWorldService.sayHello();
+//        redisUtil.incr("idGenerater", 10); 不用时候注释掉，要用是打开
+        return systemConfigService.sayHello();
     }
 }

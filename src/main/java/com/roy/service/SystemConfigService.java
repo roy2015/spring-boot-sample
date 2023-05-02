@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
  */
 
 @Component
-public class HellWorldService {
+public class SystemConfigService {
     public String sayHello() {
         return "{\"sessionId\":\"123bacd1\", \"hubId\":1, \"userName\":\"abc\"}";
     }
