@@ -12,6 +12,10 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class SystemConfigService {
+    public SystemConfigService() {
+        int k = 0;
+    }
+
     public String sayHello() {
         return "{\"sessionId\":\"123bacd1\", \"hubId\":1, \"userName\":\"abc\"}";
     }
